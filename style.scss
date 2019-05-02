@@ -1,0 +1,61 @@
+// imports
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
+
+// variables fonts
+$fontNav: "Cormorant Unicase", serif;
+$fontSize: 1.2rem;
+
+// variables colors
+$maincolor: #111;
+$fontcolor: #ebe5c6;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin navigation {
+  font-family: $fontNav;
+  padding: 1rem;
+}
+
+@mixin link {
+  text-decoration: none;
+  font-size: $fontSize;
+  padding: 1em;
+}
+
+@mixin list {
+  display: inline;
+  list-style: none;
+}
+
+header {
+  background: $maincolor;
+  height: 4em;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid gray;
+}
+
+body {
+  background: url(images/main/ironthrone.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+a {
+  @include link;
+  color: $fontcolor;
+}
+
+ul li {
+  @include list;
+}
+
+nav {
+  @include navigation;
+  float: right;
+}
