@@ -1,0 +1,10 @@
+@import "style";
+
+// font variables
+$starkfontcolor: rgb(255, 0, 0);
+
+.stark {
+  h1 {
+    color: $starkfontcolor;
+  }
+}

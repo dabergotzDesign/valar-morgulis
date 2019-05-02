@@ -1,0 +1,24 @@
+// imports
+@import "style";
+
+// variables fonts
+
+header {
+  background-image: url(images/nav/the-game-of-thrones-iron-throne-is-coming-to-dundrum.jpg);
+}
+
+.throne {
+  background-image: url(images/main/ironthrone.jpg);
+  background-size: cover;
+  height: 720px;
+  background-repeat: no-repeat;
+
+  h1 {
+    @include Hmain;
+    color: $fontbodycolor;
+    position: absolute;
+    top: 4em;
+    left: 4em;
+    text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
+  }
+}

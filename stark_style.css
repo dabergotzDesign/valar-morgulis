@@ -45,4 +45,8 @@ nav a {
   padding: 1em;
   color: #ebe5c6;
 }
-/*# sourceMappingURL=style.css.map */
+
+.stark h1 {
+  color: red;
+}
+/*# sourceMappingURL=stark_style.css.map */

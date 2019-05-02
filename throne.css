@@ -45,4 +45,29 @@ nav a {
   padding: 1em;
   color: #ebe5c6;
 }
-/*# sourceMappingURL=style.css.map */
+
+header {
+  background-image: url(images/nav/the-game-of-thrones-iron-throne-is-coming-to-dundrum.jpg);
+}
+
+.throne {
+  background-image: url(images/main/ironthrone.jpg);
+  background-size: cover;
+  height: 720px;
+  background-repeat: no-repeat;
+}
+
+.throne h1 {
+  color: #ebe5c6;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Cinzel", sans-serif;
+  padding: 1em;
+  word-spacing: 0.8em;
+  color: #c2bca0;
+  position: absolute;
+  top: 4em;
+  left: 4em;
+  text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
+}
+/*# sourceMappingURL=throne.css.map */
