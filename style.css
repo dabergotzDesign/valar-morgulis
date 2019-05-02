@@ -7,12 +7,13 @@
 }
 
 header {
-  background: #111;
-  height: 4em;
+  background-image: url(images/nav/the-game-of-thrones-iron-throne-is-coming-to-dundrum.jpg);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   border-bottom: 2px solid gray;
+  -webkit-box-shadow: 0 0 16px #ebe5c6;
+          box-shadow: 0 0 16px #ebe5c6;
 }
 
 body {
@@ -32,6 +33,7 @@ a {
 ul li {
   display: inline;
   list-style: none;
+  color: #ebe5c6;
 }
 
 nav {
