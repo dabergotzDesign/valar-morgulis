@@ -1,7 +1,11 @@
 @import "style";
 
 // font variables
-$starkfontcolor: rgb(255, 0, 0);
+$starkfontcolor: grey;
+
+header {
+  background-image: url(images/nav/wolf_pelt.jpg);
+}
 
 .stark {
   h1 {

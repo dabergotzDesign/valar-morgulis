@@ -46,7 +46,11 @@ nav a {
   color: #ebe5c6;
 }
 
+header {
+  background-image: url(images/nav/wolf_pelt.jpg);
+}
+
 .stark h1 {
-  color: red;
+  color: grey;
 }
 /*# sourceMappingURL=stark_style.css.map */
