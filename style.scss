@@ -1,13 +1,17 @@
 // imports
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
 
 // variables fonts
 $fontNav: "Cormorant Unicase", serif;
+$h1font: "Cinzel", sans-serif;
 $fontSize: 1.2rem;
+$h1size: 4rem;
 
 // variables colors
 $maincolor: #111;
 $fontcolor: #ebe5c6;
+$fontbodycolor: #c2bca0;
 
 * {
   margin: 0;
@@ -15,9 +19,18 @@ $fontcolor: #ebe5c6;
   box-sizing: border-box;
 }
 
+@mixin bodybase {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: $maincolor;
+}
+
 @mixin navigation {
   font-family: $fontNav;
   padding: 1rem;
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 @mixin link {
@@ -32,24 +45,26 @@ $fontcolor: #ebe5c6;
   color: $fontcolor;
 }
 
+@mixin Hmain {
+  color: $fontcolor;
+  font-size: $h1size;
+  text-align: center;
+  font-family: $h1font;
+  padding: 1em;
+  word-spacing: 0.8em;
+}
+
 header {
   background-image: url(images/nav/the-game-of-thrones-iron-throne-is-coming-to-dundrum.jpg);
   position: sticky;
   top: 0;
+  height: 3.2em;
   border-bottom: 2px solid gray;
-  box-shadow: 0 0 16px #ebe5c6;
+  box-shadow: 0 0 8px #ebe5c6;
 }
 
 body {
-  background: url(images/main/ironthrone.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-a {
-  @include link;
-  color: $fontcolor;
+  @include bodybase;
 }
 
 // link hover, banner of the house scroll down
@@ -58,11 +73,32 @@ a {
 
 // }
 
-ul li {
-  @include list;
-}
-
 nav {
   @include navigation;
   float: right;
+
+  ul li {
+    @include list;
+  }
+
+  a {
+    @include link;
+    color: $fontcolor;
+  }
+}
+
+.throne {
+  background-image: url(images/main/ironthrone.jpg);
+  background-size: cover;
+  height: 720px;
+  background-repeat: no-repeat;
+
+  h1 {
+    @include Hmain;
+    color: $fontbodycolor;
+    position: absolute;
+    top: 4em;
+    left: 4em;
+    text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
+  }
 }

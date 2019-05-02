@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
 * {
   margin: 0;
   padding: 0;
@@ -11,34 +12,59 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  height: 3.2em;
   border-bottom: 2px solid gray;
-  -webkit-box-shadow: 0 0 16px #ebe5c6;
-          box-shadow: 0 0 16px #ebe5c6;
+  -webkit-box-shadow: 0 0 8px #ebe5c6;
+          box-shadow: 0 0 8px #ebe5c6;
 }
 
 body {
-  background: url(images/main/ironthrone.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #111;
 }
 
-a {
+nav {
+  font-family: "Cormorant Unicase", serif;
+  padding: 1rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  list-style: none;
+  color: #ebe5c6;
+}
+
+nav a {
   text-decoration: none;
   font-size: 1.2rem;
   padding: 1em;
   color: #ebe5c6;
 }
 
-ul li {
-  display: inline;
-  list-style: none;
-  color: #ebe5c6;
+.throne {
+  background-image: url(images/main/ironthrone.jpg);
+  background-size: cover;
+  height: 720px;
+  background-repeat: no-repeat;
 }
 
-nav {
-  font-family: "Cormorant Unicase", serif;
-  padding: 1rem;
-  float: right;
+.throne h1 {
+  color: #ebe5c6;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Cinzel", sans-serif;
+  padding: 1em;
+  word-spacing: 0.8em;
+  color: #c2bca0;
+  position: absolute;
+  top: 4em;
+  left: 4em;
+  text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
 }
 /*# sourceMappingURL=style.css.map */
