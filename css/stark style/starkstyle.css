@@ -50,11 +50,11 @@ nav a {
 }
 
 .headerStark {
-  background-image: url(images/nav/wolf_pelt.jpg);
+  background-image: url(../../images/nav/wolf_pelt.jpg);
 }
 
 .stark {
-  background-image: url(images/main/stark_direwolve.png);
+  background-image: url(../../images/main/stark_direwolve.png);
   background-size: contain;
   background-position: center center;
   height: 640px;

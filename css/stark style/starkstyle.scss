@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
-@import "style";
+@import "../style";
 
 // font variables
 $starkfontcolor: rgb(170, 170, 170);
@@ -11,13 +11,14 @@ $starkfontsize: 4em;
 
 // card variables
 $cardcolor: grey;
+$deadcardfilter: grayscale(100%);
 
 .headerStark {
-  background-image: url(images/nav/wolf_pelt.jpg);
+  background-image: url(../../images/nav/wolf_pelt.jpg);
 }
 
 .stark {
-  background-image: url(images/main/stark_direwolve.png);
+  background-image: url(../../images/main/stark_direwolve.png);
   background-size: contain;
   background-position: center center;
   height: 640px;
@@ -62,7 +63,7 @@ $cardcolor: grey;
   }
 
   .deadcard {
-    filter: grayscale(100%);
+    filter: $deadcardfilter;
   }
 
   .h4card {

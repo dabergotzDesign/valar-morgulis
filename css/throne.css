@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
-@import url(/home/dci-l131/Desktop/dci/HTML/valar-morghulis/throne.css);
-@import url(/home/dci-l131/Desktop/dci/HTML/valar-morghulis/starkstyle.css);
 * {
   margin: 0;
   padding: 0;
@@ -50,11 +48,11 @@ nav a {
 }
 
 .throneHeader {
-  background-image: url(images/nav/the-game-of-thrones-iron-throne-is-coming-to-dundrum.jpg);
+  background-image: url(../images/nav/the-game-of-thrones-iron-throne-is-coming-to-dundrum.jpg);
 }
 
 .throne {
-  background-image: url(images/main/ironthrone.jpg);
+  background-image: url(../images/main/ironthrone.jpg);
   background-size: cover;
   height: 720px;
   background-repeat: no-repeat;
@@ -65,7 +63,6 @@ nav a {
 .throne .h1Throne {
   color: #ebe5c6;
   font-size: 4rem;
-  text-align: center;
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
