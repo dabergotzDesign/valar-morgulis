@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
+@import url(/home/dci-l131/Desktop/dci/HTML/valar-morghulis/throne.css);
+@import url(/home/dci-l131/Desktop/dci/HTML/valar-morghulis/starkstyle.css);
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-header {
+.base-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 3.2em;
   border-bottom: 2px solid gray;
   -webkit-box-shadow: 0 0 8px #ebe5c6;
-  box-shadow: 0 0 8px #ebe5c6;
+          box-shadow: 0 0 8px #ebe5c6;
 }
 
 body {
@@ -28,13 +30,7 @@ body {
 nav {
   font-family: "Cormorant Unicase", serif;
   padding: 1rem;
-  background-image: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(black),
-    to(rgba(0, 0, 0, 0))
-  );
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
   float: right;
 }
@@ -48,11 +44,12 @@ nav ul li {
 nav a {
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: bold;
   padding: 1em;
   color: #ebe5c6;
 }
 
-header {
+.throneHeader {
   background-image: url(images/nav/the-game-of-thrones-iron-throne-is-coming-to-dundrum.jpg);
 }
 
@@ -61,9 +58,11 @@ header {
   background-size: cover;
   height: 720px;
   background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 180px black inset;
+          box-shadow: 0 0 180px black inset;
 }
 
-.throne h1 {
+.throne .h1Throne {
   color: #ebe5c6;
   font-size: 4rem;
   text-align: center;

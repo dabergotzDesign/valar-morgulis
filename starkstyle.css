@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-header {
+.base-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 3.2em;
   border-bottom: 2px solid gray;
   -webkit-box-shadow: 0 0 8px #ebe5c6;
-  box-shadow: 0 0 8px #ebe5c6;
+          box-shadow: 0 0 8px #ebe5c6;
 }
 
 body {
@@ -28,13 +30,7 @@ body {
 nav {
   font-family: "Cormorant Unicase", serif;
   padding: 1rem;
-  background-image: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(black),
-    to(rgba(0, 0, 0, 0))
-  );
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
   float: right;
 }
@@ -48,15 +44,82 @@ nav ul li {
 nav a {
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: bold;
   padding: 1em;
   color: #ebe5c6;
 }
 
-header {
+.headerStark {
   background-image: url(images/nav/wolf_pelt.jpg);
 }
 
-.h1stark {
-  color: grey;
+.stark {
+  background-image: url(images/main/stark_direwolve.png);
+  background-size: contain;
+  background-position: center center;
+  height: 640px;
+  background-repeat: no-repeat;
 }
-/*# sourceMappingURL=stark_style.css.map */
+
+.stark .h1stark {
+  color: #ebe5c6;
+  font-size: 4rem;
+  font-family: "Cinzel", sans-serif;
+  padding: 1em;
+  word-spacing: 0.8em;
+  color: #aaaaaa;
+  font-size: 4em;
+  position: absolute;
+  top: 6em;
+  left: 2em;
+  text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
+}
+
+.starkfamily .h2stark {
+  color: #ebe5c6;
+  font-size: 4rem;
+  font-family: "Cinzel", sans-serif;
+  padding: 1em;
+  word-spacing: 0.8em;
+  color: #aaaaaa;
+  margin: 2em 4em;
+  font-size: 3em;
+}
+
+.starkfamily .tree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.starkfamily .card {
+  margin: 16px 36px;
+}
+
+.starkfamily .cardcontainer {
+  background-color: grey;
+}
+
+.starkfamily .cardimg {
+  border: 2px solid dimgray;
+}
+
+.starkfamily .deadcard {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.starkfamily .h4card {
+  color: #111;
+  padding: 8px;
+}
+/*# sourceMappingURL=starkstyle.css.map */
