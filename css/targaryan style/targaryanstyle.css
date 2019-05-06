@@ -48,31 +48,31 @@ nav a {
   color: #ebe5c6;
 }
 
-.headerStark {
+.headerTargaryan {
   position: fixed;
   width: 100%;
   height: 3.2em;
   border-bottom: 2px solid gray;
   -webkit-box-shadow: 0 0 8px #ebe5c6;
           box-shadow: 0 0 8px #ebe5c6;
-  background-image: url(../../images/nav/wolf_pelt.jpg);
+  background-image: url(../../images/nav/dragon_skin.jpg);
 }
 
-.stark {
-  background-image: url(../../images/main/stark_direwolve.png);
+.targaryan {
+  background-image: url(../../images/main/targaryan_dragon.png);
   background-size: contain;
-  background-position: center center;
-  height: 640px;
+  background-position: 15em 6em, center;
+  height: 720px;
   background-repeat: no-repeat;
 }
 
-.stark .h1stark {
+.targaryan .h1targaryan {
   color: #ebe5c6;
   font-size: 4rem;
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
-  color: #aaaaaa;
+  color: #f1f1f1;
   font-size: 4em;
   position: absolute;
   top: 6em;
@@ -80,18 +80,18 @@ nav a {
   text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
 }
 
-.starkfamily .h2stark {
+.targaryanfamily .h2targaryan {
   color: #ebe5c6;
   font-size: 4rem;
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
-  color: #aaaaaa;
-  margin: 2em 4em;
+  color: #f1f1f1;
+  margin: 0 2em;
   font-size: 3em;
 }
 
-.starkfamily .tree {
+.targaryanfamily .tree {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,25 +106,27 @@ nav a {
           justify-content: space-evenly;
 }
 
-.starkfamily .tree .card {
+.targaryanfamily .tree .card {
   margin: 16px 36px;
 }
 
-.starkfamily .tree .cardcontainer {
-  background-color: grey;
+.targaryanfamily .tree .cardcontainer {
+  background-color: #460e0e;
 }
 
-.starkfamily .tree .cardimg {
-  border: 2px solid dimgray;
+.targaryanfamily .tree .cardimg {
+  border: 2px solid #460e0e;
 }
 
-.starkfamily .tree .h4card {
-  color: #111;
+.targaryanfamily .tree .h4card {
+  color: #f1f1f1;
+  font-size: 1.4em;
+  text-align: center;
   padding: 8px;
 }
 
-.starkfamily .deadcard {
+.targaryanfamily .deadcard {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
-/*# sourceMappingURL=starkstyle.css.map */
+/*# sourceMappingURL=targaryanstyle.css.map */

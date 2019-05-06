@@ -59,12 +59,16 @@ $fontbodycolor: #c2bca0;
   word-spacing: 0.8em;
 }
 
-.base-header {
-  position: sticky;
-  top: 0;
+@mixin headerbase {
+  position: fixed;
+  width: 100%;
   height: 3.2em;
   border-bottom: 2px solid gray;
   box-shadow: 0 0 8px #ebe5c6;
+}
+
+.base-header {
+  @include headerbase;
 }
 
 body {

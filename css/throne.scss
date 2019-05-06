@@ -4,6 +4,7 @@
 // variables fonts
 
 .throneHeader {
+  @include headerbase;
   background-image: url(../images/nav/the-game-of-thrones-iron-throne-is-coming-to-dundrum.jpg);
 }
 

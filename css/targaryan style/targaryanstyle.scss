@@ -5,30 +5,31 @@
 @import "../style";
 
 // font variables
-$starkfontcolor: rgb(170, 170, 170);
-$starkcardcolor: #111;
-$starkfontsize: 4em;
+$targaryanfontcolor: rgb(241, 241, 241);
+$targaryancardcolor: rgb(70, 14, 14);
+$targaryanfontsize: 4em;
 
 // card variables
-$cardcolor: grey;
+$cardcolor: whitesmoke;
+$cardfontsize: 1.4em;
 $deadcardfilter: grayscale(100%);
 
-.headerStark {
+.headerTargaryan {
   @include headerbase;
-  background-image: url(../../images/nav/wolf_pelt.jpg);
+  background-image: url(../../images/nav/dragon_skin.jpg);
 }
 
-.stark {
-  background-image: url(../../images/main/stark_direwolve.png);
+.targaryan {
+  background-image: url(../../images/main/targaryan_dragon.png);
   background-size: contain;
-  background-position: center center;
-  height: 640px;
+  background-position: 15em 6em, center;
+  height: 720px;
   background-repeat: no-repeat;
 
-  .h1stark {
+  .h1targaryan {
     @include Hmain;
-    color: $starkfontcolor;
-    font-size: $starkfontsize;
+    color: $targaryanfontcolor;
+    font-size: $targaryanfontsize;
     position: absolute;
     top: 6em;
     left: 2em;
@@ -36,11 +37,11 @@ $deadcardfilter: grayscale(100%);
   }
 }
 
-.starkfamily {
-  .h2stark {
+.targaryanfamily {
+  .h2targaryan {
     @include Hmain;
-    color: $starkfontcolor;
-    margin: 2em 4em;
+    color: $targaryanfontcolor;
+    margin: 0 2em;
     font-size: 3em;
   }
 
@@ -55,15 +56,17 @@ $deadcardfilter: grayscale(100%);
     }
 
     .cardcontainer {
-      background-color: $cardcolor;
+      background-color: $targaryancardcolor;
     }
 
     .cardimg {
-      border: 2px solid dimgray;
+      border: 2px solid $targaryancardcolor;
     }
 
     .h4card {
-      color: $starkcardcolor;
+      color: $targaryanfontcolor;
+      font-size: $cardfontsize;
+      text-align: center;
       padding: 8px;
     }
   }
