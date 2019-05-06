@@ -1,4 +1,4 @@
-// imports
+// imports fonts
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
@@ -54,7 +54,7 @@ $fontbodycolor: #c2bca0;
   word-spacing: 0.8em;
 }
 
-header {
+.base-header {
   position: sticky;
   top: 0;
   height: 3.2em;

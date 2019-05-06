@@ -1,0 +1,19 @@
+@import "style";
+
+// font variables
+$starkfontcolor: grey;
+
+.headerStark {
+  background-image: url(images/nav/wolf_pelt.jpg);
+}
+
+.stark {
+  background-image: url(images/main/stark_direwolve.png);
+  background-size: cover;
+  height: 720px;
+  background-repeat: no-repeat;
+
+  .h1Stark {
+    color: $starkfontcolor;
+  }
+}
