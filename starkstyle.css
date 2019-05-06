@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
   height: 3.2em;
   border-bottom: 2px solid gray;
   -webkit-box-shadow: 0 0 8px #ebe5c6;
-          box-shadow: 0 0 8px #ebe5c6;
+  box-shadow: 0 0 8px #ebe5c6;
 }
 
 body {
@@ -28,7 +28,13 @@ body {
 nav {
   font-family: "Cormorant Unicase", serif;
   padding: 1rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(black),
+    to(rgba(0, 0, 0, 0))
+  );
   background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
   float: right;
 }
@@ -50,7 +56,7 @@ header {
   background-image: url(images/nav/wolf_pelt.jpg);
 }
 
-.stark h1 {
+.h1stark {
   color: grey;
 }
 /*# sourceMappingURL=stark_style.css.map */

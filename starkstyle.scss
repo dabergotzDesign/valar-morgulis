@@ -1,7 +1,7 @@
 @import "style";
 
 // font variables
-$starkfontcolor: grey;
+$starkfontcolor: red;
 
 .headerStark {
   background-image: url(images/nav/wolf_pelt.jpg);
@@ -10,10 +10,15 @@ $starkfontcolor: grey;
 .stark {
   background-image: url(images/main/stark_direwolve.png);
   background-size: cover;
+  background-position: center center;
   height: 720px;
   background-repeat: no-repeat;
 
-  .h1Stark {
+  .h1stark {
+    @include Hmain;
     color: $starkfontcolor;
+    position: absolute;
+    top: 4em;
+    left: 4em;
   }
 }

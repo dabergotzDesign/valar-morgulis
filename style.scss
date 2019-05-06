@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase");
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
+// imports stylesheets
+@import "throne";
+@import "start_style";
+
 // variables fonts
 $fontNav: "Cormorant Unicase", serif;
 $h1font: "Cinzel", sans-serif;
@@ -36,6 +40,7 @@ $fontbodycolor: #c2bca0;
 @mixin link {
   text-decoration: none;
   font-size: $fontSize;
+  font-weight: bold;
   padding: 1em;
 }
 

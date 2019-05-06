@@ -12,6 +12,7 @@
   background-size: cover;
   height: 720px;
   background-repeat: no-repeat;
+  box-shadow: 0 0 180px black inset;
 
   .h1Throne {
     @include Hmain;
