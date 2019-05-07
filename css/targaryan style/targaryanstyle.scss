@@ -30,7 +30,7 @@ $deadcardfilter: grayscale(100%);
     @include Hmain;
     color: $targaryanfontcolor;
     font-size: $targaryanfontsize;
-    position: absolute;
+    position: relative;
     top: 6em;
     left: 2em;
     text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
