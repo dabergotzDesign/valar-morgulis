@@ -79,7 +79,7 @@ nav a {
   word-spacing: 0.8em;
   color: #f1f1f1;
   font-size: 4em;
-  position: relative;
+  position: absolute;
   top: 6em;
   left: 2em;
   text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
@@ -126,7 +126,7 @@ nav a {
 
 .targaryanfamily .tree .h4card {
   color: #f1f1f1;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
   padding: 8px;
 }
