@@ -11,16 +11,16 @@
 .throne {
   background-image: url(../images/main/ironthrone.jpg);
   background-size: cover;
-  height: 720px;
+  height: 100vh;
   background-repeat: no-repeat;
   box-shadow: 0 0 180px black inset;
 
   .h1Throne {
     @include Hmain;
     color: $fontbodycolor;
-    position: absolute;
-    top: 4em;
-    left: 4em;
+    text-align: center;
+    position: relative;
+    top: 16rem;
     text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
   }
 }

@@ -21,9 +21,9 @@ $deadcardfilter: grayscale(100%);
 
 .targaryan {
   background-image: url(../../images/main/targaryan_dragon.png);
-  background-size: contain;
-  background-position: 15em 6em, center;
-  height: 720px;
+  background-size: 42%;
+  background-position: bottom center;
+  height: 100vh;
   background-repeat: no-repeat;
 
   .h1targaryan {
@@ -48,7 +48,7 @@ $deadcardfilter: grayscale(100%);
   .tree {
     display: flex;
     flex-flow: row wrap;
-    align-content: flex-start;
+    align-items: center;
     justify-content: space-evenly;
 
     .card {

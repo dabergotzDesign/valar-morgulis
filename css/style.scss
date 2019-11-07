@@ -34,7 +34,7 @@ $fontbodycolor: #c2bca0;
 @mixin navigation {
   font-family: $fontNav;
   padding: 1rem;
-  background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to left, rgb(0, 0, 0), transparent);
 }
 
 @mixin link {

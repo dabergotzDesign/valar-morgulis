@@ -63,7 +63,7 @@ nav a {
 .throne {
   background-image: url(../images/main/ironthrone.jpg);
   background-size: cover;
-  height: 720px;
+  height: 100vh;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0 0 180px black inset;
           box-shadow: 0 0 180px black inset;
@@ -77,9 +77,9 @@ nav a {
   padding: 1em;
   word-spacing: 0.8em;
   color: #c2bca0;
-  position: absolute;
-  top: 4em;
-  left: 4em;
+  text-align: center;
+  position: relative;
+  top: 16rem;
   text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
 }
 /*# sourceMappingURL=throne.css.map */
