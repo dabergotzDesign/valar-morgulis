@@ -28,8 +28,8 @@ body {
 nav {
   font-family: "Cormorant Unicase", serif;
   padding: 1rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(transparent));
+  background-image: linear-gradient(to left, black, transparent);
   float: right;
 }
 
@@ -67,6 +67,44 @@ nav a {
   background-repeat: no-repeat;
   -webkit-box-shadow: 0 0 180px black inset;
           box-shadow: 0 0 180px black inset;
+}
+
+.throne .wrapper {
+  overflow: hidden;
+  margin: -200px 0;
+}
+
+.throne .wrapper .overlay {
+  background: url("../images/backgrounds/fog_tile.png");
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100vh;
+  -webkit-animation: slideFog 60s ease-in-out infinite;
+          animation: slideFog 60s ease-in-out infinite;
+}
+
+@-webkit-keyframes slideFog {
+  0% {
+    background-position: 0, 0;
+  }
+  50% {
+    background-position: -512px, 0;
+  }
+  100% {
+    background-position: 0, 0;
+  }
+}
+
+@keyframes slideFog {
+  0% {
+    background-position: 0, 0;
+  }
+  50% {
+    background-position: -512px, 0;
+  }
+  100% {
+    background-position: 0, 0;
+  }
 }
 
 .throne .h1Throne {

@@ -15,6 +15,33 @@
   background-repeat: no-repeat;
   box-shadow: 0 0 180px black inset;
 
+  .wrapper {
+    overflow: hidden;
+    margin: -200px 0;
+
+    .overlay {
+      background: url("../images/backgrounds/fog_tile.png");
+      background-repeat: repeat;
+      background-size: cover;
+      height: 100vh;
+
+      animation: slideFog 60s ease-in-out infinite;
+    }
+  }
+
+  @keyframes slideFog {
+    0% {
+      background-position: 0, 0;
+    }
+    50% {
+      background-position: -512px, 0;
+    }
+
+    100% {
+      background-position: 0, 0;
+    }
+  }
+
   .h1Throne {
     @include Hmain;
     color: $fontbodycolor;

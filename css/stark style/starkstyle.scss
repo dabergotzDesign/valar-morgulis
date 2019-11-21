@@ -18,6 +18,15 @@ $deadcardfilter: grayscale(100%);
   background-image: url(../../images/nav/wolf_pelt.jpg);
 }
 
+.backgroundStark {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999;
+}
+
 .stark {
   background-image: url(../../images/main/stark_direwolve.png);
   background-size: contain;
@@ -40,6 +49,7 @@ $deadcardfilter: grayscale(100%);
   .h2stark {
     @include Hmain;
     color: $starkfontcolor;
+    text-decoration: underline;
     margin: 2em 4em;
     font-size: 3em;
   }
@@ -49,6 +59,7 @@ $deadcardfilter: grayscale(100%);
     flex-flow: row wrap;
     align-content: flex-start;
     justify-content: space-evenly;
+    background: #111;
 
     .card {
       margin: 16px 36px;

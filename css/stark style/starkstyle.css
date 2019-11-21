@@ -30,8 +30,8 @@ body {
 nav {
   font-family: "Cormorant Unicase", serif;
   padding: 1rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+  background-image: -webkit-gradient(linear, right top, left top, from(black), to(transparent));
+  background-image: linear-gradient(to left, black, transparent);
   float: right;
 }
 
@@ -60,6 +60,15 @@ nav a {
           box-shadow: 0 0 8px #ebe5c6;
   z-index: 1;
   background-image: url(../../images/nav/wolf_pelt.jpg);
+}
+
+.backgroundStark {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999;
 }
 
 .stark {
@@ -93,6 +102,7 @@ nav a {
   padding: 1em;
   word-spacing: 0.8em;
   color: #aaaaaa;
+  text-decoration: underline;
   margin: 2em 4em;
   font-size: 3em;
 }
@@ -110,6 +120,7 @@ nav a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background: #111;
 }
 
 .starkfamily .tree .card {
