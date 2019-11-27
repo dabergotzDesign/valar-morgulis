@@ -7,6 +7,7 @@
 // font variables
 $starkfontcolor: rgb(170, 170, 170);
 $starkcardcolor: #111;
+$starkbackcolor:rgb(48, 48, 48);
 $starkfontsize: 4em;
 
 // card variables
@@ -57,16 +58,16 @@ $deadcardfilter: grayscale(100%);
   .tree {
     display: flex;
     flex-flow: row wrap;
-    align-content: flex-start;
+    align-items: flex-start;
     justify-content: space-evenly;
-    background: #111;
+    background: $starkbackcolor;
 
     .card {
       margin: 16px 36px;
     }
 
     .cardcontainer {
-      background-color: $cardcolor;
+      background-color: $starkcardcolor;
     }
 
     .cardimg {
@@ -74,10 +75,14 @@ $deadcardfilter: grayscale(100%);
     }
 
     .h4card {
-      color: $starkcardcolor;
+      color: $starkfontcolor;
       text-align: center;
       padding: 8px;
     }
+  }
+
+  .firstRow{
+    border-top: 2px solid $starkfontcolor;
   }
 
   .deadcard {

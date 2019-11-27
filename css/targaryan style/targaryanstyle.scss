@@ -5,8 +5,9 @@
 @import "../style";
 
 // font variables
-$targaryanfontcolor: rgb(241, 241, 241);
+$targaryanfontcolor: rgb(196, 0, 0);
 $targaryancardcolor: rgb(70, 14, 14);
+$targaryanbackcolor:#111;
 $targaryanfontsize: 4em;
 
 // card variables
@@ -19,12 +20,25 @@ $deadcardfilter: grayscale(100%);
   background-image: url(../../images/nav/dragon_skin.jpg);
 }
 
+
+.backgroundTargaryan {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999;
+ 
+}
+
 .targaryan {
   background-image: url(../../images/main/targaryan_dragon.png);
-  background-size: 42%;
-  background-position: bottom center;
+  background-size: contain;
+  background-position: center center;
   height: 100vh;
   background-repeat: no-repeat;
+  position: relative;
+  top:6rem;
 
   .h1targaryan {
     @include Hmain;
@@ -38,17 +52,22 @@ $deadcardfilter: grayscale(100%);
 }
 
 .targaryanfamily {
+
+  background:$targaryanbackcolor;
+  
+
   .h2targaryan {
     @include Hmain;
     color: $targaryanfontcolor;
     margin: 2em 4em;
     font-size: 3em;
+    text-decoration: underline;
   }
 
   .tree {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-content: flex-start;
     justify-content: space-evenly;
 
     .card {

@@ -115,12 +115,13 @@ nav a {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background: #111;
+  background: #303030;
 }
 
 .starkfamily .tree .card {
@@ -128,7 +129,7 @@ nav a {
 }
 
 .starkfamily .tree .cardcontainer {
-  background-color: grey;
+  background-color: #111;
 }
 
 .starkfamily .tree .cardimg {
@@ -136,9 +137,13 @@ nav a {
 }
 
 .starkfamily .tree .h4card {
-  color: #111;
+  color: #aaaaaa;
   text-align: center;
   padding: 8px;
+}
+
+.starkfamily .firstRow {
+  border-top: 2px solid #aaaaaa;
 }
 
 .starkfamily .deadcard {
