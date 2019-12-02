@@ -9,10 +9,16 @@
           box-sizing: border-box;
 }
 
+li:hover {
+  text-decoration: underline;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
 .base-header {
   position: fixed;
   width: 100%;
-  height: 3.6em;
+  height: 4rem;
   border-bottom: 2px solid gray;
   -webkit-box-shadow: 0 0 8px #ebe5c6;
           box-shadow: 0 0 8px #ebe5c6;
@@ -25,20 +31,23 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #111;
+  cursor: url("../images/got-cursor.png") 2 2, default;
 }
 
 nav {
   font-family: "Cormorant Unicase", serif;
-  padding: 1rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(black), to(transparent));
-  background-image: linear-gradient(to left, black, transparent);
+  padding: 1.2rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0.95)), color-stop(rgba(0, 0, 0, 0.75)), to(transparent));
+  background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75), transparent);
   float: right;
 }
 
 nav ul li {
   display: inline;
   list-style: none;
-  color: #ebe5c6;
+  color: #fdf4c7;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 nav a {
@@ -48,18 +57,20 @@ nav a {
   padding: 1em;
   -webkit-transition-duration: 3s;
           transition-duration: 3s;
-  color: #ebe5c6;
+  color: #fdf4c7;
 }
 
 .headerLannister {
   position: fixed;
   width: 100%;
-  height: 3.6em;
+  height: 4rem;
   border-bottom: 2px solid gray;
   -webkit-box-shadow: 0 0 8px #ebe5c6;
           box-shadow: 0 0 8px #ebe5c6;
   z-index: 1;
   background-image: url(../../images/nav/lion-fur.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .lannister {
@@ -67,12 +78,12 @@ nav a {
   background-color: #e4260d;
   background-size: contain;
   background-position: 15em 6em, center;
-  height: 720px;
+  height: 100vh;
   background-repeat: no-repeat;
 }
 
 .lannister .h1lannister {
-  color: #ebe5c6;
+  color: #fdf4c7;
   font-size: 4rem;
   text-align: center;
   font-family: "Cinzel", sans-serif;
@@ -81,13 +92,13 @@ nav a {
   color: #f5dc6d;
   font-size: 4em;
   position: absolute;
-  top: 6em;
-  left: 2em;
+  top: 8em;
+  left: 3em;
   text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
 }
 
 .lannisterfamily .h2lannister {
-  color: #ebe5c6;
+  color: #fdf4c7;
   font-size: 4rem;
   text-align: center;
   font-family: "Cinzel", sans-serif;
@@ -96,6 +107,7 @@ nav a {
   color: #f5dc6d;
   margin: 0 2em;
   font-size: 3em;
+  text-decoration: underline;
 }
 
 .lannisterfamily .tree {

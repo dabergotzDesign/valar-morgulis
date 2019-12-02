@@ -27,8 +27,7 @@ $deadcardfilter: grayscale(100%);
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -999;
- 
+  z-index: -999; 
 }
 
 .targaryan {
@@ -39,6 +38,7 @@ $deadcardfilter: grayscale(100%);
   background-repeat: no-repeat;
   position: relative;
   top:6rem;
+  z-index: -1;
 
   .h1targaryan {
     @include Hmain;
@@ -51,18 +51,23 @@ $deadcardfilter: grayscale(100%);
   }
 }
 
+
+
 .targaryanfamily {
 
-  background:$targaryanbackcolor;
+ background:$targaryanbackcolor;
+ border-top: 2px red solid;
+ 
   
+ .h2targaryan {
+  @include Hmain;
+  color: $targaryanfontcolor;
+  margin: 2em 4em;
+  font-size: 3em;
+  text-decoration: underline;
+}
 
-  .h2targaryan {
-    @include Hmain;
-    color: $targaryanfontcolor;
-    margin: 2em 4em;
-    font-size: 3em;
-    text-decoration: underline;
-  }
+  
 
   .tree {
     display: flex;

@@ -5,7 +5,8 @@
 @import "../style";
 
 // font variables
-$baratheonfontcolor: rgb(212, 181, 44);
+$baratheonfontcolor: rgb(255, 222, 73);
+$baratheonbackcolor: rgb(212, 181, 44);
 $baratheoncardcolor: rgb(37, 37, 34);
 $baratheonfontsize: 4em;
 
@@ -19,12 +20,20 @@ $deadcardfilter: grayscale(100%);
   background-image: url(../../images/nav/deer-fur-texture.jpg);
 }
 
+.backgroundBaratheon {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999; 
+}
+
 .baratheon {
   background-image: url(../../images/main/baratheon_deer.png);
-  background-color: rgb(226, 212, 21);
   background-size: contain;
-  background-position: 15em 6em, center;
-  height: 720px;
+  background-position: 10rem,16rem;
+  height: 100vh;
   background-repeat: no-repeat;
 
   .h1baratheon {
@@ -39,17 +48,23 @@ $deadcardfilter: grayscale(100%);
 }
 
 .baratheonfamily {
+
+  border-top:2px solid  rgb(226, 212, 21);
+  background-image: linear-gradient( $baratheonbackcolor, rgb(34, 31, 22),rgb(165, 1, 1));
+
   .h2baratheon {
     @include Hmain;
     color: $baratheonfontcolor;
     margin: 0 2em;
     font-size: 3em;
+    text-decoration: underline;
   }
 
   .h3baratheon {
     @include Hmain;
     color: $baratheonfontcolor;
     font-size: 2em;
+    text-decoration: underline;
   }
 
   .tree {

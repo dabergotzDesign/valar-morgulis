@@ -19,13 +19,14 @@ $deadcardfilter: grayscale(100%);
   background-image: url(../../images/nav/wolf_pelt.jpg);
 }
 
+
 .backgroundStark {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -999;
+  z-index: -999; 
 }
 
 .stark {
@@ -34,6 +35,9 @@ $deadcardfilter: grayscale(100%);
   background-position: center center;
   height: 100vh;
   background-repeat: no-repeat;
+  position: relative;
+  top:6rem;
+  z-index: -1;
 
   .h1stark {
     @include Hmain;
@@ -46,21 +50,29 @@ $deadcardfilter: grayscale(100%);
   }
 }
 
+
+
 .starkfamily {
-  .h2stark {
-    @include Hmain;
-    color: $starkfontcolor;
-    text-decoration: underline;
-    margin: 2em 4em;
-    font-size: 3em;
-  }
+
+ background:$starkbackcolor;
+ border-top: 2px red solid;
+ 
+  
+ .h2stark {
+  @include Hmain;
+  color: $starkfontcolor;
+  margin: 2em 4em;
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+  
 
   .tree {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-content: flex-start;
     justify-content: space-evenly;
-    background: $starkbackcolor;
 
     .card {
       margin: 16px 36px;
@@ -71,18 +83,15 @@ $deadcardfilter: grayscale(100%);
     }
 
     .cardimg {
-      border: 2px solid dimgray;
+      border: 2px solid $starkcardcolor;
     }
 
     .h4card {
       color: $starkfontcolor;
+      font-size: $cardfontsize;
       text-align: center;
       padding: 8px;
     }
-  }
-
-  .firstRow{
-    border-top: 2px solid $starkfontcolor;
   }
 
   .deadcard {

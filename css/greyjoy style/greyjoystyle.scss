@@ -5,7 +5,7 @@
 @import "../style";
 
 // font variables
-$greyjoyfontcolor: rgb(185, 163, 63);
+$greyjoyfontcolor: rgb(122, 109, 47);
 $greyjoycardcolor: rgb(36, 36, 36);
 $greyjoyfontsize: 4em;
 
@@ -17,14 +17,25 @@ $deadcardfilter: grayscale(100%);
 .headerGreyjoy {
   @include headerbase;
   background-image: url(../../images/nav/octopus-arms.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundGreyjoy {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999; 
 }
 
 .greyjoy {
   background-image: url(../../images/main/Greyjoy_squid.png);
-  background-color: $greyjoycardcolor;
   background-size: contain;
   background-position: 15em 6em, center;
-  height: 720px;
+  height: 100vh;
   background-repeat: no-repeat;
 
   .h1greyjoy {
@@ -32,25 +43,25 @@ $deadcardfilter: grayscale(100%);
     color: $greyjoyfontcolor;
     font-size: $greyjoyfontsize;
     position: absolute;
-    top: 6em;
-    left: 2em;
+    top: 10em;
+    left: 6em;
     text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
   }
 }
 
 .greyjoyfamily {
+
+  background: #111;
+  border-top:2px solid  $greyjoyfontcolor;
+
   .h2greyjoy {
     @include Hmain;
     color: $greyjoyfontcolor;
     margin: 0 2em;
     font-size: 3em;
+    text-decoration: underline;
   }
 
-  //   .h3baratheon {
-  //     @include Hmain;
-  //     color: $lannisterfontcolor;
-  //     font-size: 2em;
-  //   }
 
   .tree {
     display: flex;
