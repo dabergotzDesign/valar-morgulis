@@ -5,24 +5,24 @@
 @import "../style";
 
 // font variables
-$targaryanfontcolor: rgb(196, 0, 0);
-$targaryancardcolor: rgb(70, 14, 14);
-$targaryancardfontcolor: rgb(22, 9, 9);
-$targaryanbackcolor:#111;
-$targaryanfontsize: 4em;
+$targaryenfontcolor: rgb(196, 0, 0);
+$targaryencardcolor: rgb(70, 14, 14);
+$targaryencardfontcolor: rgb(22, 9, 9);
+$targaryenbackcolor:#111;
+$targaryenfontsize: 4em;
 
 // card variables
 $cardcolor: whitesmoke;
 $cardfontsize: 1.1em;
 $deadcardfilter: grayscale(100%);
 
-.headerTargaryan {
+.headerTargaryen {
   @include headerbase;
   background-image: url(../../images/nav/dragon_skin.jpg);
 }
 
 
-.backgroundTargaryan {
+.backgroundTargaryen {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -31,7 +31,7 @@ $deadcardfilter: grayscale(100%);
   z-index: -999; 
 }
 
-.targaryan {
+.targaryen {
   background-image: url(../../images/main/targaryan_dragon.png);
   background-size: contain;
   background-position: center center;
@@ -41,10 +41,10 @@ $deadcardfilter: grayscale(100%);
   top:6rem;
   z-index: -1;
 
-  .h1targaryan {
+  .h1targaryen {
     @include Hmain;
-    color: $targaryanfontcolor;
-    font-size: $targaryanfontsize;
+    color: $targaryenfontcolor;
+    font-size: $targaryenfontsize;
     position: absolute;
     top: 6em;
     left: 2em;
@@ -54,15 +54,15 @@ $deadcardfilter: grayscale(100%);
 
 
 
-.targaryanfamily {
+.targaryenfamily {
 
- background:$targaryanbackcolor;
+ background:$targaryenbackcolor;
  border-top: 2px red solid;
  
   
- .h2targaryan {
+ .h2targaryen {
   @include Hmain;
-  color: $targaryanfontcolor;
+  color: $targaryenfontcolor;
   margin: 2em 4em;
   font-size: 3em;
   text-decoration: underline;
@@ -82,13 +82,13 @@ $deadcardfilter: grayscale(100%);
       margin: 16px 36px;
       display:flex;
       flex-flow: row nowrap;
-      border: 2px $targaryanfontcolor solid;
+      border: 2px $targaryenfontcolor solid;
       box-shadow: 4px 4px 8px black;
     }
 
     .card-info{
-      background:$targaryancardcolor;
-      color: $targaryancardfontcolor;
+      background:$targaryencardcolor;
+      color: $targaryencardfontcolor;
       display: none;
       opacity:0;
       transition:all 1s linear;
@@ -117,15 +117,15 @@ $deadcardfilter: grayscale(100%);
     }
 
     .cardcontainer {
-      background-color: $targaryancardcolor;
+      background-color: $targaryencardcolor;
     }
 
     .cardimg {
-      border: 2px solid $targaryancardcolor;
+      border: 2px solid $targaryencardcolor;
     }
 
     .h4card {
-      color: $targaryanfontcolor;
+      color: $targaryenfontcolor;
       font-size: $cardfontsize;
       text-align: center;
       padding: 8px;

@@ -59,7 +59,7 @@ nav a {
   color: #fdf4c7;
 }
 
-.headerTargaryan {
+.headerTargaryen {
   position: fixed;
   width: 100%;
   height: 4rem;
@@ -70,7 +70,7 @@ nav a {
   background-image: url(../../images/nav/dragon_skin.jpg);
 }
 
-.backgroundTargaryan {
+.backgroundTargaryen {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -79,7 +79,7 @@ nav a {
   z-index: -999;
 }
 
-.targaryan {
+.targaryen {
   background-image: url(../../images/main/targaryan_dragon.png);
   background-size: contain;
   background-position: center center;
@@ -90,7 +90,7 @@ nav a {
   z-index: -1;
 }
 
-.targaryan .h1targaryan {
+.targaryen .h1targaryen {
   color: #fdf4c7;
   font-size: 4rem;
   text-align: center;
@@ -105,12 +105,12 @@ nav a {
   text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
 }
 
-.targaryanfamily {
+.targaryenfamily {
   background: #111;
   border-top: 2px red solid;
 }
 
-.targaryanfamily .h2targaryan {
+.targaryenfamily .h2targaryen {
   color: #fdf4c7;
   font-size: 4rem;
   text-align: center;
@@ -123,7 +123,7 @@ nav a {
   text-decoration: underline;
 }
 
-.targaryanfamily .tree {
+.targaryenfamily .tree {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,7 +138,7 @@ nav a {
           justify-content: space-evenly;
 }
 
-.targaryanfamily .tree .card {
+.targaryenfamily .tree .card {
   margin: 16px 36px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +152,7 @@ nav a {
           box-shadow: 4px 4px 8px black;
 }
 
-.targaryanfamily .tree .card-info {
+.targaryenfamily .tree .card-info {
   background: #460e0e;
   color: #160909;
   display: none;
@@ -164,41 +164,41 @@ nav a {
   height: 370px;
 }
 
-.targaryanfamily .tree .card-info hr {
+.targaryenfamily .tree .card-info hr {
   margin: 16px;
 }
 
-.targaryanfamily .tree .card-info .character {
+.targaryenfamily .tree .card-info .character {
   text-align: center;
   padding: 16px;
 }
 
-.targaryanfamily .tree .card-info .quote {
+.targaryenfamily .tree .card-info .quote {
   padding: 4px;
   text-align: center;
 }
 
-.targaryanfamily .tree .card:hover .card-info {
+.targaryenfamily .tree .card:hover .card-info {
   opacity: 1;
   display: block;
 }
 
-.targaryanfamily .tree .cardcontainer {
+.targaryenfamily .tree .cardcontainer {
   background-color: #460e0e;
 }
 
-.targaryanfamily .tree .cardimg {
+.targaryenfamily .tree .cardimg {
   border: 2px solid #460e0e;
 }
 
-.targaryanfamily .tree .h4card {
+.targaryenfamily .tree .h4card {
   color: #c40000;
   font-size: 1.1em;
   text-align: center;
   padding: 8px;
 }
 
-.targaryanfamily .tree .h4card .truth {
+.targaryenfamily .tree .h4card .truth {
   display: none;
   width: 120px;
   background-color: black;
@@ -211,7 +211,7 @@ nav a {
   z-index: 1;
 }
 
-.targaryanfamily .tree .name:hover .truth {
+.targaryenfamily .tree .name:hover .truth {
   display: block;
   width: 120px;
   top: 92%;
@@ -219,7 +219,7 @@ nav a {
   margin-left: -60px;
 }
 
-.targaryanfamily .deadcard {
+.targaryenfamily .deadcard {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
