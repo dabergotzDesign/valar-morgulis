@@ -29,7 +29,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #111;
-  cursor: url("../images/got-cursor.png") 2 2, default;
 }
 
 nav {

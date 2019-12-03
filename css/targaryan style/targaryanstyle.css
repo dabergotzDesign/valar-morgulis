@@ -31,7 +31,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #111;
-  cursor: url("../images/got-cursor.png") 2 2, default;
 }
 
 nav {
@@ -141,6 +140,47 @@ nav a {
 
 .targaryanfamily .tree .card {
   margin: 16px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  border: 2px #c40000 solid;
+  -webkit-box-shadow: 4px 4px 8px black;
+          box-shadow: 4px 4px 8px black;
+}
+
+.targaryanfamily .tree .card-info {
+  background: #460e0e;
+  color: #160909;
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  overflow-y: scroll;
+  width: 220px;
+  height: 370px;
+}
+
+.targaryanfamily .tree .card-info hr {
+  margin: 16px;
+}
+
+.targaryanfamily .tree .card-info .character {
+  text-align: center;
+  padding: 16px;
+}
+
+.targaryanfamily .tree .card-info .quote {
+  padding: 4px;
+  text-align: center;
+}
+
+.targaryanfamily .tree .card:hover .card-info {
+  opacity: 1;
+  display: block;
 }
 
 .targaryanfamily .tree .cardcontainer {
@@ -156,6 +196,27 @@ nav a {
   font-size: 1.1em;
   text-align: center;
   padding: 8px;
+}
+
+.targaryanfamily .tree .h4card .truth {
+  display: none;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.targaryanfamily .tree .name:hover .truth {
+  display: block;
+  width: 120px;
+  top: 92%;
+  left: 25%;
+  margin-left: -60px;
 }
 
 .targaryanfamily .deadcard {

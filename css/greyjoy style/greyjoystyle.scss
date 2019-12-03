@@ -69,8 +69,45 @@ $deadcardfilter: grayscale(100%);
     align-content: flex-start;
     justify-content: space-evenly;
 
+    // Character Cards
     .card {
       margin: 16px 36px;
+      display:flex;
+      flex-flow: row nowrap;
+      border: 2px $greyjoyfontcolor solid;
+      box-shadow: 4px 4px 8px black;
+    }
+
+    .card-info{
+      background:$greyjoycardcolor;
+      color: $greyjoycardcolor;
+      display: none;
+      opacity:0;
+      transition:all 1s linear;
+      overflow-y: scroll;
+      width:220px;
+      height: 370px;
+
+      hr{
+        margin: 16px;
+      }
+
+      .character{
+        color:$greyjoyfontcolor;
+        text-align: center;
+        padding: 16px;
+      }
+
+      .quote{
+        color:$greyjoyfontcolor;
+        padding:4px;
+        text-align: center;
+      }
+    }
+
+    .card:hover .card-info{
+      opacity: 1;
+      display: block;
     }
 
     .cardcontainer {
@@ -78,7 +115,7 @@ $deadcardfilter: grayscale(100%);
     }
 
     .cardimg {
-      border: 2px solid $greyjoyfontcolor;
+      border: 2px solid $greyjoycardcolor;
     }
 
     .h4card {
@@ -86,6 +123,7 @@ $deadcardfilter: grayscale(100%);
       font-size: $cardfontsize;
       text-align: center;
       padding: 8px;
+
     }
   }
 

@@ -31,7 +31,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #111;
-  cursor: url("../images/got-cursor.png") 2 2, default;
 }
 
 nav {
@@ -151,6 +150,49 @@ nav a {
 
 .baratheonfamily .tree .card {
   margin: 16px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  border: 2px #ffde49 solid;
+  -webkit-box-shadow: 4px 4px 8px black;
+          box-shadow: 4px 4px 8px black;
+}
+
+.baratheonfamily .tree .card-info {
+  background: #252522;
+  color: #252522;
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  overflow-y: scroll;
+  width: 220px;
+  height: 370px;
+}
+
+.baratheonfamily .tree .card-info hr {
+  margin: 16px;
+}
+
+.baratheonfamily .tree .card-info .character {
+  color: #ffde49;
+  text-align: center;
+  padding: 16px;
+}
+
+.baratheonfamily .tree .card-info .quote {
+  color: #ffde49;
+  padding: 4px;
+  text-align: center;
+}
+
+.baratheonfamily .tree .card:hover .card-info {
+  opacity: 1;
+  display: block;
 }
 
 .baratheonfamily .tree .cardcontainer {
@@ -158,7 +200,7 @@ nav a {
 }
 
 .baratheonfamily .tree .cardimg {
-  border: 2px solid #ffde49;
+  border: 2px solid #252522;
 }
 
 .baratheonfamily .tree .h4card {

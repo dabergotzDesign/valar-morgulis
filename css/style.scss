@@ -52,10 +52,6 @@ $fontbodycolor: #c2bca0;
   transition: 3s;  
 }
 
-// Can't use a custom cursor in Sass *sad Developer noises*
-// @mixin cursor {
-//   cursor: url("../images/got-cursor.png"),default;
-// }
 
 li:hover{
   text-decoration: underline;
@@ -86,7 +82,6 @@ li:hover{
 
 body {
   @include bodybase;
-  @include cursor;
 }
 
 // link hover, banner of the house scroll down
