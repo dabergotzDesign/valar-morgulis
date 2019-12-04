@@ -18,6 +18,7 @@ $deadcardfilter: grayscale(100%);
 
 .headerTargaryen {
   @include headerbase;
+  @include navEffects;
   background-image: url(../../images/nav/dragon_skin.jpg);
 }
 

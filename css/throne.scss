@@ -1,11 +1,11 @@
 // imports
 @import "style";
-
 // variables fonts
 
 
 .throneHeader {
   @include headerbase;
+  @include navEffects;
   background-image: url(../images/nav/throne.jpeg);
   background-position: center;
   background-size: cover;

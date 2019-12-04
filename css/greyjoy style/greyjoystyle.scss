@@ -16,6 +16,7 @@ $deadcardfilter: grayscale(100%);
 
 .headerGreyjoy {
   @include headerbase;
+  @include navEffects;
   background-image: url(../../images/nav/octopus-arms.jpg);
   background-repeat: no-repeat;
   background-size: cover;

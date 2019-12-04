@@ -17,6 +17,7 @@ $deadcardfilter: grayscale(100%);
 
 .headerBaratheon {
   @include headerbase;
+  @include navEffects;
   background-image: url(../../images/nav/deer-fur-texture.jpg);
 }
 

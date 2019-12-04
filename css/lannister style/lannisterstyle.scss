@@ -5,8 +5,9 @@
 @import "../style";
 
 // font variables
-$lannisterfontcolor: rgb(245, 220, 109);
+$lannisterfontcolor: rgb(238, 224, 160);
 $lannistercardcolor: rgb(228, 38, 13);
+$lannisterbackcolor: rgb(196, 41, 21);
 $lannisterfontsize: 4em;
 
 // card variables
@@ -16,18 +17,28 @@ $deadcardfilter: grayscale(100%);
 
 .headerLannister {
   @include headerbase;
+  @include navEffects;
   background-image: url(../../images/nav/lion-fur.jpg);
   background-size: cover;
   background-position: center;
 }
 
+.backgroundLannister {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999; 
+}
+
 .lannister {
   background-image: url(../../images/main/lannister_lion.png);
-  background-color: $lannistercardcolor;
   background-size: contain;
   background-position: 15em 6em, center;
   height: 100vh;
   background-repeat: no-repeat;
+
 
   .h1lannister {
     @include Hmain;
@@ -41,6 +52,10 @@ $deadcardfilter: grayscale(100%);
 }
 
 .lannisterfamily {
+
+  background: $lannisterbackcolor;
+  border-top: 2px solid $lannisterfontcolor;
+
   .h2lannister {
     @include Hmain;
     color: $lannisterfontcolor;

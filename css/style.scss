@@ -17,6 +17,10 @@ $maincolor: #111;
 $fontcolor: #fdf4c7;
 $fontbodycolor: #c2bca0;
 
+//Banners
+$bannerHeight: 100px;
+$bannerWidth: 80px;
+
 * {
   margin: 0;
   padding: 0;
@@ -46,17 +50,49 @@ $fontbodycolor: #c2bca0;
 }
 
 @mixin list {
-  display: inline;
   list-style: none;
   color: $fontcolor;
   transition: 3s;  
 }
 
+// link hover, banner of the house scroll down
+@mixin navEffects{
+  li:hover{
+    text-decoration: underline;
+    transition-delay: .3s;
+  }
+  
+  ul{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-li:hover{
-  text-decoration: underline;
-  transition-delay: .3s;
+  
+  .dropdown-content{
+  
+    position: absolute;
+    top:2.5rem;
+    z-index: 1;
+  
+    .banner{
+      height:0;
+      width:$bannerWidth;
+      position: relative;
+      left:1.5rem;
+      transition: all .5s;
+    }
+  }
+  
+   li:hover .dropdown-content{
+     
+     .banner{
+        height:$bannerHeight;
+     }
+   }
 }
+
 
 @mixin Hmain {
   color: $fontcolor;
@@ -83,8 +119,6 @@ li:hover{
 body {
   @include bodybase;
 }
-
-// link hover, banner of the house scroll down
 
 
 nav {

@@ -9,12 +9,6 @@
           box-sizing: border-box;
 }
 
-li:hover {
-  text-decoration: underline;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
-}
-
 .base-header {
   position: fixed;
   width: 100%;
@@ -42,7 +36,6 @@ nav {
 }
 
 nav ul li {
-  display: inline;
   list-style: none;
   color: #fdf4c7;
   -webkit-transition: 3s;
@@ -72,9 +65,58 @@ nav a {
   background-position: center;
 }
 
+.headerLannister li:hover {
+  text-decoration: underline;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.headerLannister ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerLannister .dropdown-content {
+  position: absolute;
+  top: 2.5rem;
+  z-index: 1;
+}
+
+.headerLannister .dropdown-content .banner {
+  height: 0;
+  width: 80px;
+  position: relative;
+  left: 1.5rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.headerLannister li:hover .dropdown-content .banner {
+  height: 100px;
+}
+
+.backgroundLannister {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999;
+}
+
 .lannister {
   background-image: url(../../images/main/lannister_lion.png);
-  background-color: #e4260d;
   background-size: contain;
   background-position: 15em 6em, center;
   height: 100vh;
@@ -88,12 +130,17 @@ nav a {
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
-  color: #f5dc6d;
+  color: #eee0a0;
   font-size: 4em;
   position: absolute;
   top: 8em;
   left: 3em;
   text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
+}
+
+.lannisterfamily {
+  background: #c42915;
+  border-top: 2px solid #eee0a0;
 }
 
 .lannisterfamily .h2lannister {
@@ -103,7 +150,7 @@ nav a {
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
-  color: #f5dc6d;
+  color: #eee0a0;
   margin: 0 2em;
   font-size: 3em;
   text-decoration: underline;
@@ -133,7 +180,7 @@ nav a {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  border: 2px #f5dc6d solid;
+  border: 2px #eee0a0 solid;
   -webkit-box-shadow: 4px 4px 8px black;
           box-shadow: 4px 4px 8px black;
 }
@@ -155,13 +202,13 @@ nav a {
 }
 
 .lannisterfamily .tree .card-info .character {
-  color: #f5dc6d;
+  color: #eee0a0;
   text-align: center;
   padding: 16px;
 }
 
 .lannisterfamily .tree .card-info .quote {
-  color: #f5dc6d;
+  color: #eee0a0;
   padding: 4px;
   text-align: center;
 }
@@ -180,7 +227,7 @@ nav a {
 }
 
 .lannisterfamily .tree .h4card {
-  color: #f5dc6d;
+  color: #eee0a0;
   font-size: 1.4em;
   text-align: center;
   padding: 8px;

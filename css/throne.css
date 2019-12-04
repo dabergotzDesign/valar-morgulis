@@ -7,12 +7,6 @@
           box-sizing: border-box;
 }
 
-li:hover {
-  text-decoration: underline;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
-}
-
 .base-header {
   position: fixed;
   width: 100%;
@@ -40,7 +34,6 @@ nav {
 }
 
 nav ul li {
-  display: inline;
   list-style: none;
   color: #fdf4c7;
   -webkit-transition: 3s;
@@ -68,6 +61,47 @@ nav a {
   background-image: url(../images/nav/throne.jpeg);
   background-position: center;
   background-size: cover;
+}
+
+.throneHeader li:hover {
+  text-decoration: underline;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.throneHeader ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.throneHeader .dropdown-content {
+  position: absolute;
+  top: 2.5rem;
+  z-index: 1;
+}
+
+.throneHeader .dropdown-content .banner {
+  height: 0;
+  width: 80px;
+  position: relative;
+  left: 1.5rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.throneHeader li:hover .dropdown-content .banner {
+  height: 100px;
 }
 
 .throne {
