@@ -16,6 +16,7 @@ $cardcolor: whitesmoke;
 $cardfontsize: 1.1em;
 $deadcardfilter: grayscale(100%);
 
+
 .headerTargaryen {
   @include headerbase;
   @include navEffects;
