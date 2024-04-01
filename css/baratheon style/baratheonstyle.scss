@@ -31,7 +31,7 @@ $deadcardfilter: grayscale(100%);
 }
 
 .baratheon {
-  background-image: url(../../images/main/baratheon_deer.png);
+  background-image: url(../../images/main/baratheon_stag.png);
   background-size: contain;
   background-position: 10rem,16rem;
   height: 100vh;
@@ -86,12 +86,16 @@ $deadcardfilter: grayscale(100%);
     .card-info{
       background:$baratheoncardcolor;
       color: $baratheoncardcolor;
-      display: none;
       opacity:0;
-      transition:all 1s linear;
       overflow-y: scroll;
-      width:220px;
+      width:0;
       height: 370px;
+      transition:all 0.5s linear;
+
+      &.active{
+        width: 320px;
+        opacity: 1;
+      }
 
       hr{
         margin: 16px;
@@ -99,7 +103,8 @@ $deadcardfilter: grayscale(100%);
 
       .character{
         color:$baratheonfontcolor;
-        text-align: center;
+        font-size: 18px;
+        text-wrap: pretty;
         padding: 16px;
       }
 
@@ -110,10 +115,10 @@ $deadcardfilter: grayscale(100%);
       }
     }
 
-    .card:hover .card-info{
+    /* .card:hover .card-info{
       opacity: 1;
       display: block;
-    }
+    } */
 
     .cardcontainer {
       background-color: $baratheoncardcolor;

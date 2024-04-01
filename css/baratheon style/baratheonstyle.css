@@ -5,8 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .base-header {
@@ -14,8 +13,7 @@
   width: 100%;
   height: 4rem;
   border-bottom: 2px solid gray;
-  -webkit-box-shadow: 0 0 8px #ebe5c6;
-          box-shadow: 0 0 8px #ebe5c6;
+  box-shadow: 0 0 8px #ebe5c6;
   z-index: 1;
 }
 
@@ -30,25 +28,20 @@ body {
 nav {
   font-family: "Cormorant Unicase", serif;
   padding: 1.2rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0.95)), color-stop(rgba(0, 0, 0, 0.75)), to(transparent));
-  background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75), transparent);
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75), transparent);
   float: right;
 }
-
 nav ul li {
   list-style: none;
   color: #fdf4c7;
-  -webkit-transition: 3s;
   transition: 3s;
 }
-
 nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1em;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
+  transition-duration: 3s;
   color: #fdf4c7;
 }
 
@@ -57,49 +50,32 @@ nav a {
   width: 100%;
   height: 4rem;
   border-bottom: 2px solid gray;
-  -webkit-box-shadow: 0 0 8px #ebe5c6;
-          box-shadow: 0 0 8px #ebe5c6;
+  box-shadow: 0 0 8px #ebe5c6;
   z-index: 1;
   background-image: url(../../images/nav/deer-fur-texture.jpg);
 }
-
 .headerBaratheon li:hover {
   text-decoration: underline;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
+  transition-delay: 0.3s;
 }
-
 .headerBaratheon ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 .headerBaratheon .dropdown-content {
   position: absolute;
   top: 2.5rem;
   z-index: 1;
 }
-
 .headerBaratheon .dropdown-content .banner {
   height: 0;
   width: 80px;
   position: relative;
   left: 1.5rem;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .headerBaratheon li:hover .dropdown-content .banner {
   height: 100px;
 }
@@ -114,13 +90,12 @@ nav a {
 }
 
 .baratheon {
-  background-image: url(../../images/main/baratheon_deer.png);
+  background-image: url(../../images/main/baratheon_stag.png);
   background-size: contain;
-  background-position: 10rem,16rem;
+  background-position: 10rem, 16rem;
   height: 100vh;
   background-repeat: no-repeat;
 }
-
 .baratheon .h1baratheon {
   color: #fdf4c7;
   font-size: 4rem;
@@ -128,7 +103,7 @@ nav a {
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
-  color: #ffde49;
+  color: rgb(255, 222, 73);
   font-size: 4em;
   position: absolute;
   top: 6em;
@@ -137,11 +112,9 @@ nav a {
 }
 
 .baratheonfamily {
-  border-top: 2px solid #e2d415;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d4b52c), color-stop(#221f16), to(#a50101));
-  background-image: linear-gradient(#d4b52c, #221f16, #a50101);
+  border-top: 2px solid rgb(226, 212, 21);
+  background-image: linear-gradient(rgb(212, 181, 44), rgb(34, 31, 22), rgb(165, 1, 1));
 }
-
 .baratheonfamily .h2baratheon {
   color: #fdf4c7;
   font-size: 4rem;
@@ -149,12 +122,11 @@ nav a {
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
-  color: #ffde49;
+  color: rgb(255, 222, 73);
   margin: 0 2em;
   font-size: 3em;
   text-decoration: underline;
 }
-
 .baratheonfamily .h3baratheon {
   color: #fdf4c7;
   font-size: 4rem;
@@ -162,90 +134,66 @@ nav a {
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
-  color: #ffde49;
+  color: rgb(255, 222, 73);
   font-size: 2em;
   text-decoration: underline;
 }
-
 .baratheonfamily .tree {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  /* .card:hover .card-info{
+    opacity: 1;
+    display: block;
+  } */
 }
-
 .baratheonfamily .tree .card {
   margin: 16px 36px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  border: 2px #ffde49 solid;
-  -webkit-box-shadow: 4px 4px 8px black;
-          box-shadow: 4px 4px 8px black;
+  flex-flow: row nowrap;
+  border: 2px rgb(255, 222, 73) solid;
+  box-shadow: 4px 4px 8px black;
 }
-
 .baratheonfamily .tree .card-info {
-  background: #252522;
-  color: #252522;
-  display: none;
+  background: rgb(37, 37, 34);
+  color: rgb(37, 37, 34);
   opacity: 0;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
   overflow-y: scroll;
-  width: 220px;
+  width: 0;
   height: 370px;
+  transition: all 0.5s linear;
 }
-
+.baratheonfamily .tree .card-info.active {
+  width: 320px;
+  opacity: 1;
+}
 .baratheonfamily .tree .card-info hr {
   margin: 16px;
 }
-
 .baratheonfamily .tree .card-info .character {
-  color: #ffde49;
-  text-align: center;
+  color: rgb(255, 222, 73);
+  font-size: 18px;
+  text-wrap: pretty;
   padding: 16px;
 }
-
 .baratheonfamily .tree .card-info .quote {
-  color: #ffde49;
+  color: rgb(255, 222, 73);
   padding: 4px;
   text-align: center;
 }
-
-.baratheonfamily .tree .card:hover .card-info {
-  opacity: 1;
-  display: block;
-}
-
 .baratheonfamily .tree .cardcontainer {
-  background-color: #252522;
+  background-color: rgb(37, 37, 34);
 }
-
 .baratheonfamily .tree .cardimg {
-  border: 2px solid #252522;
+  border: 2px solid rgb(37, 37, 34);
 }
-
 .baratheonfamily .tree .h4card {
-  color: #ffde49;
+  color: rgb(255, 222, 73);
   font-size: 1.1em;
   text-align: center;
   padding: 8px;
 }
-
 .baratheonfamily .deadcard {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-/*# sourceMappingURL=baratheonstyle.css.map */
+  filter: grayscale(100%);
+}/*# sourceMappingURL=baratheonstyle.css.map */

@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .base-header {
@@ -12,8 +11,7 @@
   width: 100%;
   height: 4rem;
   border-bottom: 2px solid gray;
-  -webkit-box-shadow: 0 0 8px #ebe5c6;
-          box-shadow: 0 0 8px #ebe5c6;
+  box-shadow: 0 0 8px #ebe5c6;
   z-index: 1;
 }
 
@@ -28,26 +26,25 @@ body {
 nav {
   font-family: "Cormorant Unicase", serif;
   padding: 1.2rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0.95)), color-stop(rgba(0, 0, 0, 0.75)), to(transparent));
-  background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75), transparent);
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75), transparent);
   float: right;
 }
-
 nav ul li {
   list-style: none;
   color: #fdf4c7;
-  -webkit-transition: 3s;
   transition: 3s;
 }
-
 nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1em;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
+  transition-duration: 3s;
   color: #fdf4c7;
+}
+
+body, html {
+  height: 100%;
 }
 
 .throneHeader {
@@ -55,51 +52,34 @@ nav a {
   width: 100%;
   height: 4rem;
   border-bottom: 2px solid gray;
-  -webkit-box-shadow: 0 0 8px #ebe5c6;
-          box-shadow: 0 0 8px #ebe5c6;
+  box-shadow: 0 0 8px #ebe5c6;
   z-index: 1;
   background-image: url(../images/nav/throne.jpeg);
   background-position: center;
   background-size: cover;
 }
-
 .throneHeader li:hover {
   text-decoration: underline;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
+  transition-delay: 0.3s;
 }
-
 .throneHeader ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 .throneHeader .dropdown-content {
   position: absolute;
   top: 2.5rem;
   z-index: 1;
 }
-
 .throneHeader .dropdown-content .banner {
   height: 0;
   width: 80px;
   position: relative;
   left: 1.5rem;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .throneHeader li:hover .dropdown-content .banner {
   height: 100px;
 }
@@ -109,34 +89,109 @@ nav a {
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0 0 180px black inset;
-          box-shadow: 0 0 180px black inset;
+  box-shadow: 0 0 180px black inset;
+  overflow: hidden;
+  position: relative;
 }
-
 .throne .wrapper {
   overflow: hidden;
   margin: -200px 0;
 }
-
 .throne .wrapper .overlay {
   background: url("../images/backgrounds/fog_tile.png");
   background-repeat: repeat;
   background-size: cover;
-  height: 100vh;
-  -webkit-animation: slideFog 60s ease-in-out infinite;
-          animation: slideFog 60s ease-in-out infinite;
+  height: 150vh;
+  animation: slideFog 60s ease-in-out infinite;
+}
+.throne .headlines {
+  margin: auto;
+  transform: translateY(200%);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.throne__headline {
+  color: #fdf4c7;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Cinzel", sans-serif;
+  padding: 1em;
+  word-spacing: 0.8em;
+  padding: 0;
+  color: #c2bca0;
+  text-align: center;
+  text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
+  letter-spacing: 3px;
+}
+.throne__subheadline {
+  color: #fdf4c7;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Cinzel", sans-serif;
+  padding: 1em;
+  word-spacing: 0.8em;
+  font-size: 18px;
+  background-color: rgba(17, 17, 17, 0.5);
 }
 
-@-webkit-keyframes slideFog {
-  0% {
-    background-position: 0, 0;
-  }
-  50% {
-    background-position: -512px, 0;
-  }
-  100% {
-    background-position: 0, 0;
-  }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.7);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__popup {
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  animation: moveUp 2s linear;
+  background-image: linear-gradient(-120deg, #111, #3f3f3f);
+  box-shadow: 2px 2px 4px #111;
+  border: 2px solid whitesmoke;
+  padding: 1rem;
+}
+.modal h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+  padding: 1rem;
+}
+.modal p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 0.25rem;
+  line-height: 130%;
+}
+.modal button {
+  margin: 1rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: serif;
+  font-weight: 600;
+  border: 3px solid wheat;
+  background-color: rgb(221, 197, 151);
+  color: rgb(78, 78, 78);
+  box-shadow: inset 1px 1px 8px #111;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.modal button:hover, .modal button:focus {
+  color: #111;
+  scale: 1.1;
 }
 
 @keyframes slideFog {
@@ -150,19 +205,11 @@ nav a {
     background-position: 0, 0;
   }
 }
-
-.throne .h1Throne {
-  color: #fdf4c7;
-  font-size: 4rem;
-  text-align: center;
-  font-family: "Cinzel", sans-serif;
-  padding: 1em;
-  word-spacing: 0.8em;
-  color: #c2bca0;
-  text-align: center;
-  position: relative;
-  top: 16rem;
-  text-shadow: 0 0 2px black, 0 0 8px black, 0 0 64px black;
-  letter-spacing: 3px;
-}
-/*# sourceMappingURL=throne.css.map */
+@keyframes moveUp {
+  from {
+    transform: translateY(300%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=throne.css.map */

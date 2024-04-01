@@ -77,17 +77,22 @@ $deadcardfilter: grayscale(100%);
       flex-flow: row nowrap;
       border: 2px $greyjoyfontcolor solid;
       box-shadow: 4px 4px 8px black;
+      cursor: pointer;
     }
 
     .card-info{
       background:$greyjoycardcolor;
       color: $greyjoycardcolor;
-      display: none;
       opacity:0;
-      transition:all 1s linear;
       overflow-y: scroll;
-      width:220px;
+      width:0;
       height: 370px;
+      transition:all 0.5s linear;
+
+      &.active{
+        width: 320px;
+        opacity: 1;
+      }
 
       hr{
         margin: 16px;
@@ -95,7 +100,8 @@ $deadcardfilter: grayscale(100%);
 
       .character{
         color:$greyjoyfontcolor;
-        text-align: center;
+        font-size: 18px;
+        text-wrap: pretty;
         padding: 16px;
       }
 
@@ -106,10 +112,10 @@ $deadcardfilter: grayscale(100%);
       }
     }
 
-    .card:hover .card-info{
+    /* .card:hover .card-info{
       opacity: 1;
       display: block;
-    }
+    } */
 
     .cardcontainer {
       background-color: $greyjoycardcolor;

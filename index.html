@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/cursor.css">
+    <!-- <link rel="stylesheet" href="css/cursor.css"> -->
     <link rel="stylesheet" href="css/throne.css" />
     <link
       rel="shortcut icon"
@@ -18,7 +18,7 @@
     <header class="throneHeader base-header">
       <nav class="navigation">
         <ul>
-          <li><a href="index.html">Game of Thrones</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="stark.html" class="dropdown">House Stark</a><div class="dropdown-content"><img src="./images/banner/stark_banner.png" alt="Stark-Banner" class="banner"/></div></li>
           <li><a href="targaryan.html" class="dropdown">House Targaryen</a><div class="dropdown-content"><img src="./images/banner/targaryen_banner.png" alt="Tagaryen-Banner" class="banner"/></div></li>
           <li><a href="baratheon.html" class="dropdown">House Baratheon</a><div class="dropdown-content"><img src="./images/banner/baratheon_banner.png" alt="Baratheon-Banner" class="banner"/></div></li>
@@ -28,10 +28,29 @@
       </nav>
     </header>
     <main class="throne">
-      <h1 class="h1Throne">"VALAR MORGHULIS"</h1>
+      <div class="headlines">
+        <h1 class="throne__headline">"VALAR MORGHULIS"</h1>
+        <h2 class="throne__subheadline">A Game of Thrones fan page - showcasing the great houses</h2>
+      </div>
       <div class="wrapper">
         <div class="overlay"></div>
       </div>
     </main>
+    <div class="modal">
+
+        <div class="modal__popup">        
+          <h3>Warning! Spoilers ahead!</h3>
+
+          <p>
+            This site contains spoilers for the show 'Game of Thrones'. <br>
+            If you haven't watched it, beware to go any further.
+          </p>
+
+          <button>proceed</button>
+      
+      </div>
+
+    </div>
+    <script src="./js/popup.js"></script>
   </body>
 </html>

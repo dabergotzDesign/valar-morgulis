@@ -5,8 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .base-header {
@@ -14,8 +13,7 @@
   width: 100%;
   height: 4rem;
   border-bottom: 2px solid gray;
-  -webkit-box-shadow: 0 0 8px #ebe5c6;
-          box-shadow: 0 0 8px #ebe5c6;
+  box-shadow: 0 0 8px #ebe5c6;
   z-index: 1;
 }
 
@@ -30,25 +28,20 @@ body {
 nav {
   font-family: "Cormorant Unicase", serif;
   padding: 1.2rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0.95)), color-stop(rgba(0, 0, 0, 0.75)), to(transparent));
-  background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75), transparent);
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75), transparent);
   float: right;
 }
-
 nav ul li {
   list-style: none;
   color: #fdf4c7;
-  -webkit-transition: 3s;
   transition: 3s;
 }
-
 nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1em;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
+  transition-duration: 3s;
   color: #fdf4c7;
 }
 
@@ -57,49 +50,32 @@ nav a {
   width: 100%;
   height: 4rem;
   border-bottom: 2px solid gray;
-  -webkit-box-shadow: 0 0 8px #ebe5c6;
-          box-shadow: 0 0 8px #ebe5c6;
+  box-shadow: 0 0 8px #ebe5c6;
   z-index: 1;
   background-image: url(../../images/nav/dragon_skin.jpg);
 }
-
 .headerTargaryen li:hover {
   text-decoration: underline;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
+  transition-delay: 0.3s;
 }
-
 .headerTargaryen ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 .headerTargaryen .dropdown-content {
   position: absolute;
   top: 2.5rem;
   z-index: 1;
 }
-
 .headerTargaryen .dropdown-content .banner {
   height: 0;
   width: 80px;
   position: relative;
   left: 1.5rem;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .headerTargaryen li:hover .dropdown-content .banner {
   height: 100px;
 }
@@ -123,7 +99,6 @@ nav a {
   top: 6rem;
   z-index: -1;
 }
-
 .targaryen .h1targaryen {
   color: #fdf4c7;
   font-size: 4rem;
@@ -131,7 +106,7 @@ nav a {
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
-  color: #c40000;
+  color: rgb(196, 0, 0);
   font-size: 4em;
   position: absolute;
   top: 6em;
@@ -143,7 +118,6 @@ nav a {
   background: #111;
   border-top: 2px red solid;
 }
-
 .targaryenfamily .h2targaryen {
   color: #fdf4c7;
   font-size: 4rem;
@@ -151,87 +125,67 @@ nav a {
   font-family: "Cinzel", sans-serif;
   padding: 1em;
   word-spacing: 0.8em;
-  color: #c40000;
+  color: rgb(196, 0, 0);
   margin: 2em 4em;
   font-size: 3em;
   text-decoration: underline;
 }
-
 .targaryenfamily .tree {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  /* .card:hover .card-info{
+    opacity: 1;
+    width: 320px;
+  } */
 }
-
 .targaryenfamily .tree .card {
   margin: 16px 36px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  border: 2px #c40000 solid;
-  -webkit-box-shadow: 4px 4px 8px black;
-          box-shadow: 4px 4px 8px black;
+  flex-flow: row nowrap;
+  border: 2px rgb(196, 0, 0) solid;
+  box-shadow: 4px 4px 8px black;
+  cursor: pointer;
 }
-
 .targaryenfamily .tree .card-info {
-  background: #460e0e;
-  color: #160909;
-  display: none;
+  background: #111;
+  color: rgb(196, 0, 0);
   opacity: 0;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
   overflow-y: scroll;
-  width: 220px;
+  width: 0;
   height: 370px;
+  transition: all 0.5s linear;
 }
-
+.targaryenfamily .tree .card-info.active {
+  width: 320px;
+  opacity: 1;
+}
 .targaryenfamily .tree .card-info hr {
   margin: 16px;
 }
-
 .targaryenfamily .tree .card-info .character {
-  text-align: center;
+  font-size: 18px;
+  text-wrap: pretty;
+  line-height: 140%;
   padding: 16px;
 }
-
 .targaryenfamily .tree .card-info .quote {
   padding: 4px;
   text-align: center;
 }
-
-.targaryenfamily .tree .card:hover .card-info {
-  opacity: 1;
-  display: block;
-}
-
 .targaryenfamily .tree .cardcontainer {
-  background-color: #460e0e;
+  background-color: rgb(70, 14, 14);
 }
-
 .targaryenfamily .tree .cardimg {
-  border: 2px solid #460e0e;
+  border: 2px solid rgb(70, 14, 14);
 }
-
 .targaryenfamily .tree .h4card {
-  color: #c40000;
+  color: rgb(196, 0, 0);
   font-size: 1.1em;
   text-align: center;
   padding: 8px;
 }
-
 .targaryenfamily .tree .h4card .truth {
   display: none;
   width: 120px;
@@ -244,7 +198,6 @@ nav a {
   position: absolute;
   z-index: 1;
 }
-
 .targaryenfamily .tree .name:hover .truth {
   display: block;
   width: 120px;
@@ -252,9 +205,6 @@ nav a {
   left: 25%;
   margin-left: -60px;
 }
-
 .targaryenfamily .deadcard {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-/*# sourceMappingURL=targaryanstyle.css.map */
+  filter: grayscale(100%);
+}/*# sourceMappingURL=targaryanstyle.css.map */

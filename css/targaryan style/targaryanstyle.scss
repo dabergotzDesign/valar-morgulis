@@ -7,7 +7,7 @@
 // font variables
 $targaryenfontcolor: rgb(196, 0, 0);
 $targaryencardcolor: rgb(70, 14, 14);
-$targaryencardfontcolor: rgb(22, 9, 9);
+$targaryencardfontcolor: rgb(145, 29, 29);
 $targaryenbackcolor:#111;
 $targaryenfontsize: 4em;
 
@@ -85,24 +85,31 @@ $deadcardfilter: grayscale(100%);
       flex-flow: row nowrap;
       border: 2px $targaryenfontcolor solid;
       box-shadow: 4px 4px 8px black;
+      cursor: pointer;
     }
 
     .card-info{
-      background:$targaryencardcolor;
-      color: $targaryencardfontcolor;
-      display: none;
-      opacity:0;
-      transition:all 1s linear;
+      background:#111;
+      color: $targaryenfontcolor;
+      opacity: 0;
       overflow-y: scroll;
-      width:220px;
+      width: 0;
       height: 370px;
+      transition:all 0.5s linear;
+
+      &.active{
+        width: 320px;
+        opacity: 1;
+      }
 
       hr{
         margin: 16px;
       }
 
       .character{
-        text-align: center;
+        font-size: 18px;
+        text-wrap: pretty;
+        line-height: 140%;
         padding: 16px;
       }
 
@@ -112,10 +119,10 @@ $deadcardfilter: grayscale(100%);
       }
     }
 
-    .card:hover .card-info{
+    /* .card:hover .card-info{
       opacity: 1;
-      display: block;
-    }
+      width: 320px;
+    } */
 
     .cardcontainer {
       background-color: $targaryencardcolor;
